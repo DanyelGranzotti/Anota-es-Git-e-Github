@@ -1,19 +1,18 @@
 ![alt text](git_workflow_fullwidth.png)
 
-
-    - git init
-- - - 
-Inicializa repositório local vazio 
-
-<br>
-
-    - git status
+     git init
 - - -
-Checa status dos arquivos do repositório local e mostra aqueles modificados 
+Inicializa repositório local vazio
 
 <br>
 
-    - git add (filename)
+     git status
+- - -
+Checa status dos arquivos do repositório local e mostra aqueles modificados
+
+<br>
+
+     git add (filename)
 - - -
 Adiciona arquivos ao git.
 
@@ -21,17 +20,17 @@ Obs: Podemos passar "*" como parametro para adicionar todos os arquivos ao git
 
 <br>
 
-    - git diff
-- - - 
-Mostra diferenças entre o arquivo atual e a versão adicionada ao git 
+     git diff
+- - -
+Mostra diferenças entre o arquivo atual e a versão adicionada ao git
 
 <br>
 
-    - git commit -m "message"
+     git commit -m "message"
 - - -
 Armazena os arquivos do git no repositório de forma permanente
 
-- git commit -ammend 
+- git commit -ammend
 
 Essa opção permite alterar o commit anterior. Supondo que você tenha feito um commit mas percebeu que algo estava errado, você pode alterar o commit anterior para refletir suas alterações. Sem que seja necessário criar um novo commit.
 
@@ -41,9 +40,10 @@ A opção --no-edit especifíca que a mensagem do commit não deve ser editada.
 
 <br>
 
-    - git log
+     git log
 - - -
 Retorna uma lista com os commits feitos, contendo:
+<center>
 
 | SHA |
 |---|
@@ -51,27 +51,28 @@ Retorna uma lista com os commits feitos, contendo:
 | Data do commit |
 | Menssagem do commit |
 
+</center>
+
 Variações do comando:
 ![alt text](git_log.jpg)
-
-
+        
 <br>
 
-    - git show HEAD
+    git show HEAD
 - - -
 Em Git, o commit em que se encontra atualmente é conhecido como o commit HEAD. Em muitos casos, o commit mais recentemente feito é o commit HEAD
 
 <br>
 
-    - git reset commit_SHA
+    git reset commit_SHA
 - - -
 Comando utilizado para resetar repositório ao estado do commit com o SHA passado
 
-Obs: Somente os 7 primeiros caracteres são essenciais 
+Obs: Somente os 7 primeiros caracteres são essenciais
 
 <br>
 
-    - git stash
+    git stash
 - - -
 Restaura o repositório ao estado anterior ao stash temporaiamente para que você  possa fazer uma alteração em um commit passado e depois voltar ao estado que estava antes do stash sem perder alterações feitas.
 
@@ -89,10 +90,9 @@ Uma vez corrigido o bug, quer recuperar o código em que estava a trabalhar ante
 
 - git stash pop
 
-
 <br>
 
-    - git alias commands
+    git alias commands
 - - -
 
 Caso você execute um comando com muita frequência, você pode criar um alias "atalho" para o mesmo. Usando o comando "git config":
